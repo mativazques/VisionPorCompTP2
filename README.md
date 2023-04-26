@@ -24,7 +24,7 @@ Ayuda:
 
 Para correr el programa colocar en la consola:
 ```sh
-  python3 tp1.py
+  python3 tp2.py
   ```
 
 ## Desarrollo
