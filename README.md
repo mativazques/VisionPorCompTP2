@@ -1,11 +1,26 @@
 # Trabajo Práctico Nro. 2
 
 ## Consigna: 
-Usando como base el programa brindado por la cátedra, crear un programa que permita seleccionar una
-porción rectangular de una imagen con el ratón, luego:
-- con la letra “g” lo guardamos a disco en una nueva imagen y salimos.
-- con la letra “r” restauramos la imagen original y volvemos a realizar la selección.
-- con la “q” salimos.
+Teniendo en cuenta que:
+- Una transformación afín se representa con una matriz de 2 × 3.
+- Tiene 6 grados de libertad y puede ser recuperada con 3 puntos.
+
+Usando como base el programa escrito en la práctica 1, se pide: 
+
+- Crear un programa que permita seleccionar con el ratón 3 puntos de una primera imagen.
+- Luego crear un método que compute una transformación afín entre las esquinas de
+una segunda imagen y los 3 puntos seleccionados.
+- Por último aplicar esta transformación sobre la segunda imagen, e incrustarla en la
+primera imagen.
+
+Ayuda: 
+
+```sh
+  cv2.getAffineTransform
+  ```
+```sh
+  cv2.warpAffine
+  ```
 
 Para correr el programa colocar en la consola:
 ```sh
@@ -14,14 +29,23 @@ Para correr el programa colocar en la consola:
 
 ## Desarrollo
 
-Se utilizará como imagen base la pantalla de selección del juego Super Smash Bros porque en la misma se presentan bordes definidos entre cada personaje, con lo que se podrá verificar si la selección, recorte y guardado son correctos o no.
+Se utilizará como imagen base:
 
-![Selección de personaje](image.jpg)
+![Imagen destino](images\DestinoDST.jpg)
 
-Aquí debajo se observará la última selección realizada: 
+La imagen que se transformará es: 
 
-![Selección de personaje](resultado_tp1.png)
+![Imagen fuente](images\FuenteSRC.png)
 
-https://docs.opencv.org/3.4/d4/d61/tutorial_warp_affine.html
-https://pyimagesearch.com/2021/04/28/opencv-thresholding-cv2-threshold/
-https://programmerclick.com/article/46211852755/
+Se crea un fondo con el fondo negro que se combinará con la imagen transformada, de otra forma se superpondrían: 
+
+![Imagen fuente](images\back.jpg)
+
+La imagen fuente transformada es: 
+
+![Imagen fuente](images\front.jpg)
+
+Finalmente, a continuación se observa el resultado de la aplicación de la transformada: 
+
+![Resultado](images\resultado_tp2.jpg)
+
