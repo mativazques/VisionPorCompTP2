@@ -27,6 +27,8 @@ Para correr el programa colocar en la consola:
   python3 tp2.py
   ```
 
+Para salir del programa presione "Q".
+
 ## Desarrollo
 
 Se utilizará como imagen base:
