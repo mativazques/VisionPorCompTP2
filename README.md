@@ -33,21 +33,21 @@ Para salir del programa presione "Q".
 
 Se utilizará como imagen base:
 
-![Imagen destino](https://gitlab.com/vpc-mat-asvazques/tp2/-/blob/main/images/DestinoDST.jpg)
+![Imagen destino](FuenteSRC.jpg)
 
 La imagen que se transformará es: 
 
-![Imagen fuente](\tp2\images\FuenteSRC.png)
+![Imagen fuente](FuenteSRC.png)
 
 Se crea un fondo con el fondo negro que se combinará con la imagen transformada, de otra forma se superpondrían: 
 
-![Imagen fuente](\tp2\images\back.jpg)
+![Imagen fuente](back.jpg)
 
 La imagen fuente transformada es: 
 
-![Imagen fuente](\tp2\images\front.jpg)
+![Imagen fuente](front.jpg)
 
 Finalmente, a continuación se observa el resultado de la aplicación de la transformada: 
 
-![Resultado](\tp2\images\resultado_tp2.jpg)
+![Resultado](resultado_tp2.jpg)
 
