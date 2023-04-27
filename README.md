@@ -1,4 +1,4 @@
-# Trabajo Práctico Nro. 2
+# Trabajo Práctico Nro. 2: Transformación afín - Incrustando imágenes
 
 ## Consigna: 
 Teniendo en cuenta que:
