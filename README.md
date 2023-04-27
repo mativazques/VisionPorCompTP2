@@ -33,7 +33,7 @@ Para salir del programa presione "Q".
 
 Se utilizará como imagen base:
 
-![Imagen destino](\tp2\images\DestinoDST.jpg)
+![Imagen destino](https://gitlab.com/vpc-mat-asvazques/tp2/-/blob/main/images/DestinoDST.jpg)
 
 La imagen que se transformará es: 
 
